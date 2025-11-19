@@ -36,8 +36,8 @@ make
 # Start the server (listen on all interfaces, port 25555):
 ./server -f questions.txt -i 0.0.0.0 -p 25555
 
-# On each client machine, connect using the server's LAN IP (or host's IPv4 for online play):  
-# Note: If running through a VM, ensure the host's network adapter is set to “Bridged”  
+# On each client machine, connect using the server's LAN IP (or host's IPv4 if you are playing online):  
+# If running through a VM, ensure the host's network adapter is set to “Bridged”, or it won't work   
 ./client -i 10.0.2.15 -p 25555
 ```  
 Parts of this code are credited to *Systems Programming, 3rd Edition* by Shudong Hao.
